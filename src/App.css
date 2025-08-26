@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.nav-link{
+    padding: 1px;
+    border: 2px solid transparent;
+}
+.nav-item:hover .nav-link{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    transition: .5s;
+    
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel-caption{
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+
+
+.cards{
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 18rem;
+}
