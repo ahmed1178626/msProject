@@ -7,8 +7,10 @@ export default function Carousel() {
 
 
   const [num, setNum] = useState(5);
-  const [name, setName] = useState('ahmed');
+  const [name, setName] = useState(true);
   const [isMarred, setIsMarred] = useState(false);
+
+
 
 
   const changeStatus = () => {
@@ -19,13 +21,19 @@ export default function Carousel() {
     }
   };
   const changeName = () => {
-      setName('ahmed');
+    if (name) {
+      setName(false)
+    } else {
+      setName(true)
+    }
+      // setName('bashir');
   };
   const incereaseNum = () => {
-    if(num>=10 || num<=1) return;
+    if(num>=10 ) return;
     setNum((preState) => preState + 1);
   };
   const decereaseNum = () => {
+    if(num<=1 ) return;
     setNum((preState) => preState - 1);
   };
 
@@ -54,7 +62,7 @@ return (
           <button onClick={decereaseNum} className="btn btn-primary">
             Sub Microsoft{" "}
           </button>
-          <h3>{name}</h3>
+          <h3 style={{color: name ?'blue':'red'}}>{name ? 'Ahmed':'Bashir'}</h3>
           <button onClick={changeName} className="btn btn-danger">
             Sub Microsoft
           </button>
