@@ -1,7 +1,11 @@
 import { useState } from "react";
 
+
+
 export default function State(props) {
   console.log(props);
+
+  
 
   const [num, setNum] = useState("");
 
