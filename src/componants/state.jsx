@@ -52,7 +52,7 @@ export default function State() {
             <input type="tel" onChange={handlePhone} placeholder=" Phone..." />
           </h3>
           <button style={{ backgroundColor: color ? "blue" : "green" }} className="btn btn-primary" onClick={handleclick}>
-            {color ? "Submit" : "Completed"}
+            {color ? "Submit" : "Save Info"}
           </button>
           
         </div>
