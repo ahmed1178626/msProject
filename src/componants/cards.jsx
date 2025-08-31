@@ -12,9 +12,9 @@ export default function Cards() {
 
   return (
     <>
-      <div className="row">
+      <div className="row container mx-auto">
         {prod.map((item) => (
-          <div className="col-md-3">
+          <div className="col-6 col-md-4 col-lg-3">
             <div className="card">
               <img src={item.image} className="card-img-top" alt="..." />
               <div className="card-body">

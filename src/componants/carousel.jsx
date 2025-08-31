@@ -21,7 +21,6 @@ export default function Carousel() {
     } else {
       setName(true);
     }
-    // setName('bashir');
   };
   const incereaseNum = () => {
     if (num >= 10) return;

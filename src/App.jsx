@@ -11,11 +11,11 @@ function App() {
 
   return (
     <>
-      
-    <Header />
-    <Main />
-    <Footer />
-
+      <div className="body">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
     </>
   );
 }
