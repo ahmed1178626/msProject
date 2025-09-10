@@ -6,15 +6,7 @@ import { useState } from "react";
 export default function Carousel() {
   const [num, setNum] = useState(5);
   const [name, setName] = useState(true);
-  const [isMarred, setIsMarred] = useState(false);
 
-  const changeStatus = () => {
-    if (isMarred) {
-      setIsMarred(false);
-    } else {
-      setIsMarred(true);
-    }
-  };
   const changeName = () => {
     if (name) {
       setName(false);
@@ -43,12 +35,6 @@ export default function Carousel() {
           />
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
-            <h4 style={{ color: isMarred ? "red" : "green" }}>
-              {isMarred ? "married" : "unmarried"}
-            </h4>
-            <button onClick={changeStatus} className="btn btn-secondary">
-              ChangeStatus
-            </button>
             <p>Some representative placeholder content for the first slide.</p>
             <button onClick={incereaseNum} className="btn btn-primary">
               Add Microsoft

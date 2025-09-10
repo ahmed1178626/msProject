@@ -42,11 +42,11 @@ body{
 }
 input{
     display: block;
-    margin: 8px 0px;
-    background-color: transparent;
+    margin: 0px 0px 12px;
+    padding: 0px 4px;
+    /* background-color: transparent;
     border-color: white;
-    padding: .1rem;
-    border-radius: 4px;
+    border-radius: 4px; */
 }
 .card{
     background-color: #e8e6e6;
